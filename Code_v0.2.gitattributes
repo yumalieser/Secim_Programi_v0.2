@@ -1,0 +1,47 @@
+
+#Secim oylarinda verilen oyların sayılması ve adaylara dağıtımı üzerine bir program
+
+print('Merhaba degerli vatandas. Vereceğiniz oydan hemen sonra adayların önceden almış aldığı oy sayılarını görebilirsiniz.')
+
+print("Aşağıdaki sorulara eksiksiz yanıt verelim. Ve son aşamaya kadar ilerleyelim lütfen.")
+
+isim = input("Lütfen adınızı ve soyadınızı giriniz:")
+print("Merhaba", isim ,"Vereceğin oylar bizim için önemli..")
+
+yas = int(input("Lütfen yaşınızı giriniz:"))
+
+if yas < 18:
+    print("Yaşınız oy vermek için uygun değil!")
+
+else:
+    print("Tebrikler şimdi oy verebilirsiniz!")
+    print("\nLütfen aşağıdaki adaylardan birini seçiniz...")
+    print("Birden fazla verilen oylar ve adayların numaraları haricindeki oylar geçersiz sayılır...")
+
+    print("*****************************************"
+          "\n1. Recep Tayyip Erdoğan \n2. Mansur Yavaş \n3. Muharrem İnce \n4. Kemal Kılıçdaroğlu \n5. Devlet Bahçeli \n6.ÇEKİMSER"
+          "\n*****************************************")
+    oy = int(input("\nLütfen yukarıdaki adaylardan birini seçiniz : "))
+
+    print(    "Sayın", isim , "oy verme işleminiz başarıyla gerçekleştirilmiştir... " )
+
+
+    if (oy == 1):
+        print("Oyunuz Recep Tayyip Erdoğan'dır.")
+    elif (oy == 2):
+        print("Oyunuz Mansur Yavaş'dır.")
+    elif (oy == 3):
+        print("Oyunuz Muharrem İnce'dir.")
+    elif (oy == 4):
+        print("Oyunuz Kemal Kılıçdaroğlu'dur.")
+    elif (oy == 5):
+        print("Oyunuz Devlet Bahçeli'dir.")
+    elif (oy == 6):
+        print("Oyunuzu Çekimser olarak kullandınız..")
+    else :
+        print("Geçersiz bir giriş yaptınız...")
+
+
+    print("\n Burada bulunan veriler ve şahıslar ilgili uygulama içindir. Gerçeği yansıtmamaktadır!!!")
+    print("\n Uygulamamızı kullandığınız için teşekkürler. Geliştirmeye devam edeceğim. Bana ulaşmak için Github hesabım :@yumalieser")
+    print("\n UYGULAMA SÜRÜMÜ v0.2")
